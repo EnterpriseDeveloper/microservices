@@ -102,7 +102,7 @@
 						</exclude>
 					</excludes>
 					<image>
-						<name>voroshilovmax90/${project.artifactId}:s4</name>
+						<name>voroshilovmax90/${project.artifactId}:s6</name>
 					</image>
 				</configuration>
 			</plugin>
