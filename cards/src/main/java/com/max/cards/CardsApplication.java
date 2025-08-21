@@ -2,7 +2,10 @@ package com.max.cards;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+
+import com.max.cards.dto.CardsContactInfoDto;
 
 import io.swagger.v3.oas.annotations.ExternalDocumentation;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
@@ -19,7 +22,7 @@ import io.swagger.v3.oas.annotations.info.License;
  * @EntityScan("com.max.cards.model")
  */
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
-
+@EnableConfigurationProperties(value = { CardsContactInfoDto.class })
 @OpenAPIDefinition(info = @Info(title = "Cards microservice REST API Documentation", description = "EazyBank Cards microservice REST API Documentation", version = "v1", contact = @Contact(name = "Voroshilov Max", email = "voroshilovmax90@gmail.com", url = "https://github.com/EnterpriseDeveloper"), license = @License(name = "Apache 2.0", url = "https://github.com/EnterpriseDeveloper")), externalDocs = @ExternalDocumentation(description = "EazyBank Cards microservice REST API Documentation", url = "https://github.com/EnterpriseDeveloper"))
 public class CardsApplication {
 

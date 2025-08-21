@@ -9,6 +9,26 @@
       "projectName": "accounts",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-CardsApplication<cards>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.max.cards.CardsApplication",
+      "projectName": "cards",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-LoansApplication<loans>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.max.loans.LoansApplication",
+      "projectName": "loans",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
