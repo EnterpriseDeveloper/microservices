@@ -29,6 +29,16 @@
       "projectName": "loans",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ConfigserverApplication<configserver>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.max.configserver.ConfigserverApplication",
+      "projectName": "configserver",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
